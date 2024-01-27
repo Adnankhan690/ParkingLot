@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8f45378-0f48-4403-a383-36b16fdec6d1" name="Changes" comment="" />
+    <list default="true" id="d8f45378-0f48-4403-a383-36b16fdec6d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/IssueTicketRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/IssueTicketRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/IssueTicketResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/IssueTicketResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TicketService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2bMul7HcuCTtxDiiKLxnsO62MQp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -42,6 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/91739/IdeaProjects/ParkingLot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,6 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1706037418488</updated>
       <workItem from="1706037419648" duration="6166000" />
+      <workItem from="1706046534617" duration="852000" />
+      <workItem from="1706371001858" duration="5587000" />
     </task>
     <servers />
   </component>
