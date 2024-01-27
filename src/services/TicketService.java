@@ -1,12 +1,13 @@
 package services;
 
 import exceptions.GateNotFoundException;
-import models.Gate;
-import models.Ticket;
-import models.Vehicle;
-import models.VehicleType;
+import models.*;
 import repositories.GateRepository;
+import repositories.ParkingLotRepository;
+import repositories.TicketRepository;
 import repositories.VehicleRepository;
+import strategies.RandomSpotAssignmentStrategy;
+import strategies.SpotAssignmentStrategy;
 
 import java.time.Instant;
 import java.util.Date;
@@ -16,15 +17,24 @@ public class TicketService {
 
     private final GateRepository gateRepository;
     private final VehicleRepository vehicleRepository;
-    public TicketService(GateRepository gateRepository, VehicleRepository vehicleRepository) {
+    private final SpotAssignmentStrategy randomSpotStrategy;
+    private final TicketRepository ticketRepository;
+
+    public TicketService(GateRepository gateRepository, VehicleRepository vehicleRepository, TicketRepository ticketRepository, SpotAssignmentStrategy randomSpotAssignmentStrategy) {
         this.gateRepository = gateRepository;
         this.vehicleRepository = vehicleRepository;
+        this.ticketRepository = ticketRepository;
+        this.randomSpotStrategy = randomSpotAssignmentStrategy;
     }
 
     public Ticket issueTicket(String vehicleNumber, VehicleType vehicleType, Long gateId) throws GateNotFoundException{
         // Query the DataBase to get the objects using ID.
 
         //Save Ticket object and vehicle number in the DB. -> Repository
+
+        // 1. Create Ticket Object
+        // 2. Select a spot for the vehicle
+        // 3. Return the object;
         Ticket ticket = new Ticket();
 
         Optional<Gate> gateOptional = gateRepository.findGateById(gateId);
@@ -54,10 +64,16 @@ public class TicketService {
         ticket.setNumber(String.valueOf(Instant.now().getEpochSecond()));
 //      ticket.setParkingSpot();
 
+        ParkingSpot parkingSpot = randomSpotStrategy.getSpot(1L, gate, vehicleType);
 
-        // 1. Create Ticket Object
-        // 2. Select a spot for the vehicle
-        // 3. Return the object;
-        return null;
+        //Fill the spot with the vehicle and 'status' as OCCUPIED
+        parkingSpot.setVehicle(savedVehicle);
+        parkingSpot.setParkingSpotStatus(ParkingSpotStatus.OCCUPIED);
+
+        //Parking spot repository and save this
+        ticket.setParkingSpot(parkingSpot);
+
+        ticketRepository.save(ticket);
+        return ticket;
     }
 }

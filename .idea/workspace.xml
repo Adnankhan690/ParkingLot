@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8f45378-0f48-4403-a383-36b16fdec6d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/TicketController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dtos/IssueTicketRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/IssueTicketRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/IssueTicketResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/IssueTicketResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/VehicleType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -78,7 +75,7 @@
       <updated>1706037418488</updated>
       <workItem from="1706037419648" duration="6166000" />
       <workItem from="1706046534617" duration="852000" />
-      <workItem from="1706371001858" duration="5587000" />
+      <workItem from="1706371001858" duration="10552000" />
     </task>
     <servers />
   </component>
